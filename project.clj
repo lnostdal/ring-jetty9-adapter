@@ -1,12 +1,12 @@
-(def jetty-version "9.4.39.v20210325")
+(def jetty-version "9.4.40.v20210413")
 
-(defproject info.sunng/ring-jetty9-adapter "0.14.4-SNAPSHOT"
+(defproject lnostdal/ring-jetty9-adapter "0.14.5-lrn"
   :description "Ring adapter for jetty9, which supports websocket and spdy"
   :url "http://github.com/sunng87/ring-jetty9-adapter"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.10.2"]
-                 [ring/ring-servlet "1.8.1"
+  :dependencies [[org.clojure/clojure "1.10.3"]
+                 [ring/ring-servlet "1.9.3"
                   :exclusions [javax.servlet/servlet-api]]
                  [org.eclipse.jetty/jetty-server ~jetty-version]
                  [org.eclipse.jetty.websocket/websocket-server ~jetty-version]
@@ -16,8 +16,8 @@
   :deploy-repositories {"releases" :clojars}
   :global-vars {*warn-on-reflection* true}
   :jvm-args ["-Xmx128m"]
-  :profiles {:dev {:dependencies [[clj-http "3.10.1"]
-                                  [stylefruits/gniazdo "1.1.4"]]}
+  :profiles {:dev {:dependencies [[clj-http "3.12.3"]
+                                  [stylefruits/gniazdo "1.2.0"]]}
              ;; for openjdk8 above u252
              :example-http2-openjdk8 {:source-paths ["examples/"]
                                       :main ^:skip-aot rj9a.http2
