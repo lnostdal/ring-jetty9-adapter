@@ -1,6 +1,6 @@
 (def jetty-version "9.4.40.v20210413")
 
-(defproject lnostdal/ring-jetty9-adapter "0.14.5-lrn"
+(defproject org.clojars.lnostdal/ring-jetty9-adapter "0.14.5-lrn"
   :description "Ring adapter for jetty9, which supports websocket and spdy"
   :url "http://github.com/sunng87/ring-jetty9-adapter"
   :license {:name "Eclipse Public License"
@@ -13,7 +13,8 @@
                  [org.eclipse.jetty.websocket/websocket-servlet ~jetty-version]
                  [org.eclipse.jetty.http2/http2-server ~jetty-version]
                  [org.eclipse.jetty/jetty-alpn-server ~jetty-version]]
-  :deploy-repositories {"releases" :clojars}
+  :deploy-repositories {"clojars" {:url "https://clojars.org/repo"
+                                   :sign-releases false}}
   :global-vars {*warn-on-reflection* true}
   :jvm-args ["-Xmx128m"]
   :profiles {:dev {:dependencies [[clj-http "3.12.3"]

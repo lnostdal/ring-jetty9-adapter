@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>lnostdal</groupId>
+  <groupId>org.clojars.lnostdal</groupId>
   <artifactId>ring-jetty9-adapter</artifactId>
   <packaging>jar</packaging>
   <version>0.14.5-lrn</version>
@@ -18,7 +18,7 @@
     <url>https://github.com/lnostdal/ring-jetty9-adapter</url>
     <connection>scm:git:git://github.com/lnostdal/ring-jetty9-adapter.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lnostdal/ring-jetty9-adapter.git</developerConnection>
-    <tag>9fea823e8e681ee6c1d8001decebf3c0827e0f06</tag>
+    <tag>de1bc347f7eea86747f3f9f54ff9466079278080</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
