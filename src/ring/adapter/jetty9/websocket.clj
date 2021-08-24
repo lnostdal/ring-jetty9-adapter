@@ -197,7 +197,8 @@
     (configure [^WebSocketServletFactory factory]
       (doto (.getPolicy factory)
         (.setIdleTimeout ws-max-idle-time)
-        (.setMaxTextMessageSize ws-max-text-message-size))
+        (.setMaxTextMessageSize ws-max-text-message-size)
+        (.setMaxBinaryMessageSize ws-max-text-message-size))
       (.setCreator factory
                    (if (map? ws)
                      (reify-default-ws-creator ws)
