@@ -1,6 +1,6 @@
-(def jetty-version "9.4.40.v20210413")
+(def jetty-version "9.4.43.v20210629")
 
-(defproject org.clojars.lnostdal/ring-jetty9-adapter "0.14.5-lrn"
+(defproject org.clojars.lnostdal/ring-jetty9-adapter "0.14.6-lrn"
   :description "Ring adapter for jetty9, which supports websocket and spdy"
   :url "http://github.com/sunng87/ring-jetty9-adapter"
   :license {:name "Eclipse Public License"
