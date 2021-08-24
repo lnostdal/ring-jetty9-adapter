@@ -1,12 +1,12 @@
 (def jetty-version "9.4.42.v20210604") ;; NOTE: Have this match the latest jetty fetched via ring!
 
-(defproject org.clojars.lnostdal/ring-jetty9-adapter "0.14.7-lrn"
+(defproject org.clojars.lnostdal/ring-jetty9-adapter "0.14.8-lrn"
   :description "Ring adapter for jetty9, which supports websocket and spdy"
   :url "http://github.com/sunng87/ring-jetty9-adapter"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.10.3"]
-                 [ring/ring-servlet "1.9.3"
+                 [ring/ring-servlet "1.9.4"
                   :exclusions [javax.servlet/servlet-api]]
                  [org.eclipse.jetty/jetty-server ~jetty-version]
                  [org.eclipse.jetty.websocket/websocket-server ~jetty-version]
