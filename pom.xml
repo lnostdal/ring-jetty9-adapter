@@ -4,7 +4,7 @@
   <groupId>org.clojars.lnostdal</groupId>
   <artifactId>ring-jetty9-adapter</artifactId>
   <packaging>jar</packaging>
-  <version>0.14.8-lrn</version>
+  <version>0.14.10-lrn</version>
   <name>ring-jetty9-adapter</name>
   <description>Ring adapter for jetty9, which supports websocket and spdy</description>
   <url>http://github.com/sunng87/ring-jetty9-adapter</url>
@@ -18,7 +18,7 @@
     <url>https://github.com/lnostdal/ring-jetty9-adapter</url>
     <connection>scm:git:git://github.com/lnostdal/ring-jetty9-adapter.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/lnostdal/ring-jetty9-adapter.git</developerConnection>
-    <tag>7186d80ce3f36fe4c51f59ae68ac7c83c881ed48</tag>
+    <tag>2dc7d2d5d0382d5d463009e36e02045cb2a66d06</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -71,7 +71,7 @@
     <dependency>
       <groupId>ring</groupId>
       <artifactId>ring-servlet</artifactId>
-      <version>1.9.4</version>
+      <version>1.9.5</version>
       <exclusions>
         <exclusion>
           <artifactId>servlet-api</artifactId>
@@ -82,27 +82,27 @@
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-server</artifactId>
-      <version>9.4.42.v20210604</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty.websocket</groupId>
       <artifactId>websocket-server</artifactId>
-      <version>9.4.42.v20210604</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty.websocket</groupId>
       <artifactId>websocket-servlet</artifactId>
-      <version>9.4.42.v20210604</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty.http2</groupId>
       <artifactId>http2-server</artifactId>
-      <version>9.4.42.v20210604</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-alpn-server</artifactId>
-      <version>9.4.42.v20210604</version>
+      <version>9.4.44.v20210927</version>
     </dependency>
     <dependency>
       <groupId>clj-http</groupId>
